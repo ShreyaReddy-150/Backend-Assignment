@@ -1,0 +1,132 @@
+<body>
+    <app-header></app-header>
+
+    <div class="container" id="regImage">
+        <div class="row">
+        </div>
+        <div class="container" id="regForm">
+            <h1>Register Now</h1>
+            <br>
+            <form action="">
+                <label for="regName">Name - </label>
+                <input type="text" name="regName" id="regName" class="form-control" placeholder="Ex: John Doe"  #name>
+                <label for="regEmail">Email ID - </label>
+                <input type="email" name="regEmail" id="regEmail" class="form-control"
+                    placeholder="Ex: johhdoe@email.com" #email>
+                <label for="regPwd">Password - </label>
+                <input type="password" name="regPwd" id="regPwd" class="form-control" placeholder="Ex: *************" #pwd>
+                <label for="regDOB">Date of Birth - </label>
+                <input type="date" name="regDOB" id="regDOB" class="form-control">
+                <label for="regPhone">Phone No. - </label>
+                <input type="text" name="regPhone" id="regPhone" class="form-control" placeholder="Ex: 1234567890" #phNo>
+                <br><br>
+                <input type="button" value="Join Us Now!!" class="btnReg" routerLink="/login" (click)='submit(name.value,email.value,phNo.value,pwd.value)'><br><br>
+            </form>
+
+        </div>
+        <br><br>
+    </div>
+
+    <!-- --------------Footer----------------- -->
+
+    <div class="my-container">
+        <br>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h6 class="hfooter">
+                        <a style="color: rgb(135, 20, 0);" class="btn" >Home
+                            <i class="bi-house-fill"></i>
+                        </a>
+                    </h6>
+                </div>
+                <div class="col">
+                    <h6 class="hfooter">
+                        <a style="color: rgb(135, 20, 0);" class="btn" >Library
+                            <i class="bi-book-half"></i>
+                        </a>
+                    </h6>
+                </div>
+    
+                <div class="col">
+                    <h6 class="hfooter">
+                        <a style="color: rgb(135, 20, 0);" class="btn" >Wish List
+                            <i class="bi-bookmark-check-fill"></i>
+                        </a>
+                    </h6>
+                </div>
+    
+                <div class="col">
+                    <h6 class="hfooter">
+                        <a style="color: rgb(135, 20, 0);" class="btn" >Favourites
+                            <i class="bi-heart-fill"></i>
+                        </a>
+                    </h6>
+                </div>
+    
+                <div class="col">
+                    <h6 class="hfooter">
+                        <a style="color: rgb(135, 20, 0);" class="btn">Recommend
+                            <i class="bi-check-circle-fill"></i>
+                        </a>
+                    </h6>
+                </div>
+                
+                <div class="col">
+                    <h6 class="hfooter">
+                        <a style="color: rgb(135, 20, 0);" class="btn">Authors
+                            <i class="bi-person-circle"></i>
+                        </a>
+                    </h6>
+                </div>
+    
+                <div class="col">
+                    <h6 class="hfooter">
+                        <a style="color: rgb(135, 20, 0);" class="btn" >About Us
+                            <i class="bi-info-circle-fill"></i>
+                        </a>
+                    </h6>
+                </div>
+            </div>
+            <hr style="border:2px solid darkred; background-color: darkred;">
+            <div class="row" id="upFooter">
+                <h5 style="font-weight: 500">Contact Us - </h5>
+                <div style="text-align:center;" class="col">
+                    <h6 style="font-weight: 300; border-right: 2px solid rgb(135, 20, 0);">Ph No. - 9876543210
+                        <i class="bi-telephone-fill"></i>
+                    </h6>
+                </div>
+                <div style="text-align: center;" class="col">
+                    <h6 style="font-weight: 300; border-right: 2px solid rgb(135, 20, 0);">xyz@email.com
+                        <i class="bi-envelope-fill"></i>
+                    </h6>
+                </div>
+    
+                <div style="text-align: center;" class="col">
+                    <h6 style="font-weight: 300; border-right: 2px solid rgb(135, 20, 0);">xyz@facebook
+                        <i class="bi-facebook"></i>
+                    </h6>
+                </div>
+    
+                <div style="text-align: center;" class="col">
+                    <h6 style="font-weight: 300; border-right: 2px solid rgb(135, 20, 0);">xyz@instagram
+                        <i class="bi-instagram"></i>
+                    </h6>
+                </div>
+    
+                <div style="text-align: center;" class="col">
+                    <h6 style="font-weight: 300; border-right: 0ch;">xyz@linkedin
+                        <i class="bi-linkedin"></i>
+                    </h6>
+                </div>
+    
+            </div>
+            <hr style="border:2px solid darkred; background-color: darkred;">
+            <div class="row" id="copyright">
+                <p style="text-align: center;">All rights are reserved &copy; 2022. Data gathered form
+                    <a href="https://openlibrary.org/">openlibrary.org</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</body>

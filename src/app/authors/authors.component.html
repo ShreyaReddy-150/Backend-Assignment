@@ -1,0 +1,16 @@
+<body>
+    <app-navbar></app-navbar>
+    <br><br>
+    <div class="container">
+        <h2>Authors</h2>
+        <div class="row">
+            <ul *ngFor="let book of bookData;">
+                <li>{{book.aname}}</li>
+            </ul>
+        </div>
+        <br>
+    </div>
+    <br><br>
+    
+    <app-footer></app-footer>
+</body>
